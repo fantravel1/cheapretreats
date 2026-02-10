@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/ea442b620f7a25d8.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap","style"]
+:HL["https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&h=500&q=80","image"]
+0:{"buildId":"EP_C9Kn7qYMYIGnkSbN7_","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"retreats","paramType":null,"paramKey":"retreats","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"buddhist-retreat-centre","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
