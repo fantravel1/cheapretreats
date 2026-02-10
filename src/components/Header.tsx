@@ -97,11 +97,17 @@ export function Header() {
               )}
             </div>
 
-            <Link href="/community-run" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
-              Community-Run
+            <Link href="/retreats" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
+              All Retreats
             </Link>
-            <Link href="/verified" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
-              Verified Safe
+            <Link href="/types" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
+              By Type
+            </Link>
+            <Link href="/locations" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
+              Locations
+            </Link>
+            <Link href="/guides" className="px-3 py-2 text-sm font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-100/60 rounded-lg transition-colors">
+              Guides
             </Link>
           </div>
 
@@ -160,11 +166,23 @@ export function Header() {
             </div>
 
             <div className="py-3 border-t border-warm-200/40 space-y-1">
+              <Link href="/retreats" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
+                All Retreats
+              </Link>
+              <Link href="/types" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
+                Browse by Type
+              </Link>
+              <Link href="/locations" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
+                Locations
+              </Link>
+              <Link href="/guides" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
+                Guides
+              </Link>
               <Link href="/community-run" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
-                Community-Run Retreats
+                Community-Run
               </Link>
               <Link href="/verified" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-sage-800 hover:bg-sage-100/60 rounded-lg">
-                Verified Safe & Real
+                Verified Safe
               </Link>
             </div>
 

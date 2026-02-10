@@ -1,0 +1,440 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "After Your Retreat — Integration Guide",
+  description:
+    "How to handle re-entry after a healing retreat. The retreat high crash, journaling prompts, maintaining changes, post-retreat blues, and knowing when to go back.",
+  alternates: {
+    canonical: "https://cheapretreats.com/guides/post-retreat-integration",
+  },
+};
+
+const retreatHighCrash = [
+  {
+    phase: "The high (days 1-3 after returning)",
+    description:
+      "You feel amazing. Everything is clearer. Colors seem brighter, food tastes better, you are patient with your partner, you do not check your phone compulsively. You think: 'I am changed. This is who I am now.' Enjoy this. It is real. But it is not the whole story.",
+  },
+  {
+    phase: "The dip (days 4-14 after returning)",
+    description:
+      "The old patterns start creeping back. You snap at someone. You stay up too late scrolling. You eat standing up again. The contrast between who you were at the retreat and who you are at home becomes painful. Some people feel sadness, irritability, or a sense of loss. This is the 'post-retreat blues' and it is incredibly common. It does not mean the retreat failed. It means you experienced something genuinely different from your default, and the gap is uncomfortable.",
+  },
+  {
+    phase: "The settling (weeks 2-6 after returning)",
+    description:
+      "The high fades and the dip levels out. What remains is subtler: maybe a slightly longer fuse, a new morning habit, a different relationship with silence, an awareness of patterns you did not see before. These quiet, persistent changes are the real fruit of the retreat. They are easy to miss because they do not feel dramatic. But they are there.",
+  },
+];
+
+const reEntryTips = [
+  {
+    tip: "Do not schedule a packed day for your return",
+    detail:
+      "If you can, leave a full buffer day between arriving home and going back to work or obligations. The transition from retreat pace to life pace is jarring. Give yourself at least 24 hours to unpack, do laundry, buy groceries, and simply be home without demands. Going straight from a silent retreat to a Monday morning meeting is a recipe for overwhelm.",
+  },
+  {
+    tip: "Keep your phone off for as long as possible",
+    detail:
+      "The temptation to immediately catch up on messages, emails, and social media is strong. Resist it for at least several hours after arriving home. The flood of information and obligation that pours in when you turn your phone back on can erase the retreat's effects almost instantly. Trickle back in, do not flood.",
+  },
+  {
+    tip: "Eat simply for the first few days",
+    detail:
+      "Your body has been eating retreat food -- simple, regular, often vegetarian. The shock of processed food, caffeine, alcohol, and irregular meals can affect you more than you expect. Ease back into your normal diet gradually. Your body will thank you.",
+  },
+  {
+    tip: "Do not try to explain the experience to everyone",
+    detail:
+      "People will ask 'how was it?' and you may not have words. 'It was good, I am glad I went' is a complete answer. The most important experiences are often the ones that resist easy description. You do not owe anyone a narrative. Some things are for you alone.",
+  },
+  {
+    tip: "Write before you forget",
+    detail:
+      "Within the first two days home, write down what you noticed, felt, and experienced. Not as a polished essay -- as raw notes. What surprised you. What was hard. What you want to remember. These notes become invaluable later when the memory softens and the specifics fade.",
+  },
+  {
+    tip: "Protect your sleep",
+    detail:
+      "One of the most immediate benefits of a retreat is better sleep. When you get home, try to maintain the earlier bedtime and screenless wind-down for as long as you can. Sleep is the single most practical thing you can protect from your retreat experience.",
+  },
+];
+
+const journalingPrompts = [
+  "What was the hardest moment and what did it teach me?",
+  "What did I notice about myself when the distractions were removed?",
+  "What habit or pattern became visible that I could not see before?",
+  "What did my body feel like on day one versus the last day?",
+  "What do I want to bring home from this experience?",
+  "What am I afraid will disappear now that I am back?",
+  "What one small practice felt most nourishing?",
+  "Who did I miss? Who did I not miss? What does that tell me?",
+  "What would I do differently if I went again?",
+  "What does my life look like if I take what I learned here seriously?",
+];
+
+const maintainingChanges = [
+  {
+    practice: "Keep one small thing",
+    detail:
+      "Do not try to import the entire retreat into your daily life. Pick one practice -- five minutes of morning stillness, an evening walk, eating one meal without your phone, journaling before bed. One thing you can actually sustain. Consistency matters infinitely more than ambition. A five-minute daily practice you keep for six months is worth more than an hour-long practice you abandon after two weeks.",
+  },
+  {
+    practice: "Create a transition ritual",
+    detail:
+      "Find a daily moment that bridges retreat pace and life pace. It could be as simple as making tea mindfully each morning, sitting in a specific chair for five quiet minutes, or taking three deep breaths before starting work. This small ritual becomes an anchor -- a physical reminder that the retreat version of you is still accessible.",
+  },
+  {
+    practice: "Reduce one source of noise",
+    detail:
+      "At the retreat, the noise was removed for you. At home, you have to remove it yourself. Pick one thing: turn off push notifications, stop listening to podcasts during every walk, eat lunch without a screen, or leave your phone in another room while you sleep. Removing one habitual source of stimulation creates space you did not know you needed.",
+  },
+  {
+    practice: "Schedule a check-in with yourself",
+    detail:
+      "Set a reminder for one month after your retreat. When it arrives, re-read your journal notes and honestly assess: what has stuck? What has slipped? This is not about guilt -- it is about awareness. The changes that stuck reveal what your life actually has room for. The ones that slipped reveal where the friction is.",
+  },
+  {
+    practice: "Find community support",
+    detail:
+      "If the retreat offered a post-retreat group, alumni network, or follow-up sessions, use them. Talking to people who shared the experience helps normalize the re-entry struggle and keeps the insights alive. If no formal community exists, even one friend who understands what you went through is enough.",
+  },
+  {
+    practice: "Be compassionate about backsliding",
+    detail:
+      "You will backslide. Everyone does. The retreat version of you is not your permanent self -- it is your rested self. When the old patterns return (and they will), notice them without judgment. The fact that you can now see the pattern is itself a product of the retreat. Awareness without change is still progress. Awareness is the prerequisite for change.",
+  },
+];
+
+const whenToGoBack = [
+  {
+    scenario: "Your first retreat showed you something you want to explore deeper",
+    guidance:
+      "If the retreat opened a door -- to meditation, to grief work, to solitude -- and you want to walk further through it, a return visit or a longer retreat in the same tradition makes sense. Wait at least a month to let the first experience settle before booking.",
+  },
+  {
+    scenario: "You are using retreats as escape",
+    guidance:
+      "Be honest: are you going back because the retreat helps you engage with life better, or because life is unbearable and the retreat is the only place you feel okay? If it is the latter, the issue is not that you need more retreats -- it is that your daily life needs to change. A therapist may be more helpful than another week away.",
+  },
+  {
+    scenario: "Annual maintenance",
+    guidance:
+      "Many people find that an annual retreat becomes a sustainable practice -- a yearly reset that prevents the kind of deep burnout that drove them to seek a retreat in the first place. If you can build this into your budget and schedule, it is one of the better investments you can make in your long-term wellbeing.",
+  },
+  {
+    scenario: "After a major life event",
+    guidance:
+      "Loss, divorce, job change, health crisis -- these are all legitimate reasons to return to a retreat. The container of a retreat provides the safety to process what daily life does not give you space for. Going back after a significant event is not weakness; it is practical self-care.",
+  },
+  {
+    scenario: "When the changes have fully faded",
+    guidance:
+      "If three to six months after your retreat, every practice has slipped and you feel like you are back at square one, a return can help reinforce what you learned. But also examine why everything faded -- was the retreat experience incompatible with your actual life, or did you simply not protect space for it?",
+  },
+];
+
+export default function PostRetreatIntegrationPage() {
+  return (
+    <>
+      {/* Breadcrumb */}
+      <div className="bg-warm-50 border-b border-warm-200/60">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <nav className="flex items-center gap-2 text-sm text-sage-500">
+            <Link href="/" className="hover:text-sage-700 transition-colors">
+              Home
+            </Link>
+            <span>/</span>
+            <Link
+              href="/guides"
+              className="hover:text-sage-700 transition-colors"
+            >
+              Guides
+            </Link>
+            <span>/</span>
+            <span className="text-sage-800 font-medium">
+              Post-Retreat Integration
+            </span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Hero */}
+      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-sage-100/70 text-sage-700 rounded-full text-sm font-medium mb-8">
+            After Your Retreat
+          </div>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+            After Your Retreat
+          </h1>
+          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+            Nobody talks about this part enough. Coming home can be harder than
+            going. Here is what to expect, what to protect, and how to carry
+            something forward.
+          </p>
+        </div>
+      </section>
+
+      {/* The retreat high crash */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-4">
+            The retreat high (and the crash)
+          </h2>
+          <p className="text-sage-600 leading-relaxed mb-10">
+            Almost everyone goes through this arc. Knowing it is coming does not
+            prevent it, but it makes it less frightening.
+          </p>
+          <div className="space-y-8">
+            {retreatHighCrash.map((item, i) => (
+              <div
+                key={i}
+                className="relative pl-8 border-l-2 border-sage-200"
+              >
+                <div className="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-sage-300 border-2 border-white" />
+                <h3 className="font-serif text-lg font-semibold text-sage-800 mb-2">
+                  {item.phase}
+                </h3>
+                <p className="text-sage-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Re-entry tips */}
+      <section className="py-14 md:py-20 bg-warm-50">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-6">
+            Re-entry tips
+          </h2>
+          <div className="space-y-4">
+            {reEntryTips.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-6 border border-warm-200/60"
+              >
+                <h3 className="font-serif text-lg font-semibold text-sage-800 mb-2">
+                  {item.tip}
+                </h3>
+                <p className="text-sage-600 text-sm leading-relaxed">
+                  {item.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Journaling prompts */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-4">
+            Journaling prompts for integration
+          </h2>
+          <p className="text-sage-600 leading-relaxed mb-8">
+            Use these within the first week home, before the specifics fade.
+            Write quickly and honestly. This is for you, not for anyone else.
+          </p>
+          <div className="space-y-3">
+            {journalingPrompts.map((prompt, i) => (
+              <div
+                key={i}
+                className="flex gap-3 items-start p-4 bg-sage-50/50 rounded-xl border border-sage-100/80"
+              >
+                <span className="text-sage-400 font-display font-semibold flex-shrink-0">
+                  {i + 1}.
+                </span>
+                <span className="text-sage-700 leading-relaxed italic font-serif">
+                  {prompt}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Maintaining changes */}
+      <section className="py-14 md:py-20 bg-warm-50">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-4">
+            Maintaining the changes
+          </h2>
+          <p className="text-sage-600 leading-relaxed mb-10">
+            The honest answer: you will not maintain all of them, and that is
+            okay. The retreat is a reset, not a permanent fix. But some things
+            can carry forward if you protect them.
+          </p>
+          <div className="space-y-4">
+            {maintainingChanges.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-6 border border-warm-200/60"
+              >
+                <h3 className="font-serif text-lg font-semibold text-sage-800 mb-2">
+                  {item.practice}
+                </h3>
+                <p className="text-sage-600 text-sm leading-relaxed">
+                  {item.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* When to go back */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-6">
+            When to go back
+          </h2>
+          <div className="space-y-6">
+            {whenToGoBack.map((item, i) => (
+              <div
+                key={i}
+                className="bg-sage-50/50 rounded-2xl p-6 border border-sage-100/80"
+              >
+                <h3 className="font-serif text-lg font-semibold text-sage-800 mb-2">
+                  {item.scenario}
+                </h3>
+                <p className="text-sage-600 text-sm leading-relaxed">
+                  {item.guidance}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Closing */}
+      <section className="py-14 md:py-20 bg-warm-50">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-sky-50/50 rounded-2xl p-8 border border-sky-100/60">
+            <h2 className="font-serif text-xl font-semibold text-sage-900 mb-4">
+              Integration is the real retreat
+            </h2>
+            <div className="space-y-4 text-sage-600 leading-relaxed">
+              <p>
+                The days at the retreat center are a seed. The weeks and months
+                after are the growing. What you do with the experience matters
+                as much as the experience itself.
+              </p>
+              <p>
+                Be gentle with yourself. The old patterns are strong because
+                they are familiar, not because they are right. Every time you
+                choose the new pattern -- even for a moment, even imperfectly --
+                you are integrating what the retreat gave you.
+              </p>
+              <p className="font-serif text-sage-800 italic">
+                You are not trying to live at the retreat forever. You are
+                trying to bring a little of it home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-warm-50 to-sage-50/30">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-sage-900 mb-4">
+            Ready for your next retreat?
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <Link
+              href="/start-here"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-sage-600 text-white font-medium rounded-full hover:bg-sage-700 transition-colors"
+            >
+              Find Your Retreat
+            </Link>
+            <Link
+              href="/reviews"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-sage-700 font-medium rounded-full hover:bg-sage-50 transition-colors border border-sage-200"
+            >
+              Read Reviews
+            </Link>
+            <Link
+              href="/guides"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-sage-700 font-medium rounded-full hover:bg-sage-50 transition-colors border border-sage-200"
+            >
+              All Guides
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "After Your Retreat -- Integration Guide",
+            description:
+              "How to handle re-entry after a healing retreat including the retreat high crash, journaling prompts, maintaining changes, and knowing when to go back.",
+            url: "https://cheapretreats.com/guides/post-retreat-integration",
+            publisher: {
+              "@type": "Organization",
+              name: "CheapRetreats",
+              url: "https://cheapretreats.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://cheapretreats.com/guides/post-retreat-integration",
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: "How to Integrate Your Retreat Experience",
+            description:
+              "A step-by-step guide to maintaining the benefits of a healing retreat after returning home.",
+            step: [
+              {
+                "@type": "HowToStep",
+                name: "Plan for the crash",
+                text: "Expect a high for 1-3 days, a dip for 4-14 days, then a settling period. The dip is normal and does not mean the retreat failed.",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Protect your re-entry",
+                text: "Leave a buffer day, keep phone off, eat simply, protect your sleep, and resist explaining the experience immediately.",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Journal within the first week",
+                text: "Write down what you noticed, felt, and want to remember before the specifics fade.",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Keep one small practice",
+                text: "Pick one sustainable daily practice from the retreat -- five minutes of stillness, a walk, screenless meals. Consistency matters more than ambition.",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Check in after one month",
+                text: "Re-read your notes and assess what has stuck and what has slipped, without judgment.",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Consider when to return",
+                text: "Wait at least a month before booking another retreat. Distinguish between wanting to go deeper and wanting to escape.",
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  );
+}

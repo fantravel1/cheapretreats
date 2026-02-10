@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "FAQ — Common Questions About Affordable Healing Retreats",
   description:
-    "Answers to common questions about CheapRetreats, affordable healing retreats, safety, what to expect, pricing, work exchange, and how to choose the right retreat.",
+    "Answers to common questions about CheapRetreats, affordable healing retreats, safety, what to expect, pricing, work exchange, dietary needs, disabilities, traveling alone, and how to choose the right retreat.",
   alternates: { canonical: "https://cheapretreats.com/faq" },
 };
 
@@ -24,6 +24,10 @@ const faqs = [
         q: "Why is it called 'cheap'?",
         a: "We own the word. 'Cheap' here means fair-priced, honest, community-run, simple, and non-extractive. It's a rejection of the idea that healing needs to be expensive to be real. We don't apologize for it.",
       },
+      {
+        q: "Do you run the retreats yourselves?",
+        a: "No. We are a discovery and vetting platform, not a retreat center. We research, verify, and organize retreat information so you can make an informed decision. The retreats themselves are run by independent centers, communities, monasteries, and facilitators. We hold them to our standards, but we don't operate them.",
+      },
     ],
   },
   {
@@ -41,6 +45,10 @@ const faqs = [
         q: "How do I know a retreat isn't a cult?",
         a: "We specifically screen for red flags: charismatic leaders who can't be questioned, required secrecy, pressure to sign up for more programs, shame-based language, and no ability to leave. If we find any of these, the retreat is not listed. Period. We also tag every retreat's spiritual orientation clearly: secular, spiritual-optional, religious, or trauma-informed.",
       },
+      {
+        q: "What happens if I have a bad experience at a listed retreat?",
+        a: "We take this seriously. Email us at hello@cheapretreats.com with details and we will investigate. If a retreat violates our safety standards, we remove it from the platform. We also update our listing notes to warn future guests about specific issues. Your feedback directly protects other people.",
+      },
     ],
   },
   {
@@ -55,8 +63,12 @@ const faqs = [
         a: "Absolutely. Most people haven't. We have a complete First-Time Guide that covers what to expect, what won't happen, your boundaries, what to bring, and how to know if you're ready (spoiler: you don't need to be). Many retreats on our platform are specifically welcoming to first-timers.",
       },
       {
-        q: "What if I need to leave early?",
-        a: "You can always leave. A good retreat will tell you this explicitly. Before booking, check the retreat's refund and cancellation policy — we list these transparently. If a retreat makes you feel like you can't leave, that's a red flag.",
+        q: "How far in advance should I book?",
+        a: "It depends on the retreat. Popular monastery stays and work exchange programs can fill up 3-6 months ahead. Smaller independent centers often have availability within a few weeks. Donation-based retreats tend to be first-come, first-served. We note booking lead times on each listing so you can plan accordingly.",
+      },
+      {
+        q: "Can I talk to someone who has been to a specific retreat before I book?",
+        a: "Many of our listings include links to honest reviews from past participants. You can also check our Reviews page for detailed accounts. Some retreat centers have alumni networks or will connect you with a past guest if you ask. We encourage this — talking to someone who has actually been there is one of the best ways to decide.",
       },
     ],
   },
@@ -91,6 +103,69 @@ const faqs = [
       {
         q: "What's a trauma-sensitive retreat?",
         a: "A retreat where every detail is designed for people with trauma histories. Facilitators are trained, all activities have opt-outs, physical contact never happens without consent, and grounding tools are always available. These spaces prioritize your autonomy and safety above all else.",
+      },
+    ],
+  },
+  {
+    category: "During Your Retreat",
+    questions: [
+      {
+        q: "What if I want to leave early?",
+        a: "You can always leave. A good retreat will tell you this explicitly on day one. Before booking, check the refund and cancellation policy — we list these transparently on every retreat page. Some centers offer partial refunds for early departures, others don't, but none should ever prevent you from leaving. If a retreat makes you feel trapped or guilts you for wanting to go, that is a red flag and you should contact us.",
+      },
+      {
+        q: "What if I cry the entire time?",
+        a: "That happens more often than you think, and it is completely normal. Retreats remove the distractions that keep difficult emotions at bay. Many participants cry on day one or two as their nervous system finally gets permission to release. Good facilitators will not rush to fix you, pathologize your tears, or make it about them. If you are concerned, choose a retreat tagged as trauma-informed — those spaces are designed to hold exactly this.",
+      },
+      {
+        q: "What if I hate it and feel like I wasted my money?",
+        a: "It is possible you will not enjoy every moment. Retreats are not vacations. Discomfort, boredom, restlessness, and frustration are all common — especially in the first 24-48 hours. That said, if you feel genuinely unsafe, manipulated, or misled, that is different. Trust your gut. You can leave at any time, and you can report your experience to us. We also recommend checking refund policies before booking so you know your options.",
+      },
+      {
+        q: "Can I use my phone during the retreat?",
+        a: "It depends on the retreat. Some are phone-free or ask you to surrender devices at check-in. Others have designated phone zones or hours. Many simply request that you keep phones in your room and off during group activities. We tag each retreat's technology policy on its listing page. If being unreachable causes you serious anxiety, choose a retreat that allows limited phone access — there is no shame in that.",
+      },
+    ],
+  },
+  {
+    category: "After Your Retreat",
+    questions: [
+      {
+        q: "What are 'post-retreat blues' and are they normal?",
+        a: "Very normal. Many people feel a dip — sadness, irritability, disorientation — in the days or weeks after returning home. You have been in a protected environment with intentional pacing, and now you are back in the noise. The contrast can be jarring. It does not mean the retreat failed. It means you experienced something real and your nervous system is readjusting. Be gentle with yourself. Avoid making major life decisions in the first week back.",
+      },
+      {
+        q: "How do I maintain the benefits after I go home?",
+        a: "The honest answer: you probably will not maintain all of them, and that is okay. The retreat is not a permanent fix — it is a reset. That said, some things help: keep one small practice from the retreat (even five minutes of morning stillness), reduce screen time for the first week back, journal about what you noticed during the retreat, and protect your reentry — do not schedule a packed week the day after you return. The goal is integration, not perfection.",
+      },
+      {
+        q: "How soon should I go on another retreat?",
+        a: "There is no formula. Some people go once and get what they needed. Others go annually as maintenance. A few go quarterly. We generally suggest waiting at least a month after your first retreat to let the experience settle before planning another. If you feel an urgent compulsion to immediately book another retreat, pause and ask yourself whether you are seeking healing or escaping your life. Both are valid, but they require different responses.",
+      },
+    ],
+  },
+  {
+    category: "Specific Concerns",
+    questions: [
+      {
+        q: "Can retreats accommodate dietary needs?",
+        a: "Most can. Vegetarian and vegan meals are standard at the majority of retreat centers. For specific needs — gluten-free, halal, kosher, severe allergies — contact the retreat directly before booking. We note dietary accommodation details on each listing when available. Monastery stays and donation-based retreats tend to have simpler, less flexible menus, so ask in advance. Never assume — always confirm in writing.",
+      },
+      {
+        q: "Are retreats accessible for people with disabilities?",
+        a: "Some are and some are not, and we are honest about this. Many retreat centers are in older buildings, rural locations, or mountainous terrain that can present barriers. We tag accessibility information on each listing: wheelchair access, single-story accommodation, accessible bathrooms, proximity to medical facilities, and sensory considerations. If accessibility is a priority, filter by our accessibility tags or email us and we will help you find the right fit.",
+      },
+      {
+        q: "Is it safe to travel alone to a retreat?",
+        a: "Yes, and most people do. Solo travelers are the majority at most retreat centers. You will not be the only person who arrived alone. That said, standard travel safety applies: tell someone where you are going, share your itinerary, research the location, and trust your instincts. For remote retreats, check transport options in advance — some are hard to reach without a car. We flag retreats that are particularly welcoming and well-set-up for solo travelers.",
+      },
+      {
+        q: "What if I don't speak the local language?",
+        a: "Many retreats on our platform operate in English or offer English-speaking facilitators, even in non-English-speaking countries. We list the primary language on each retreat page. Silent retreats, by nature, require less verbal communication. For retreats in other languages, check whether translation is provided. Monastery stays often have multilingual communities. If language is a concern, filter by English-speaking retreats or contact the center directly to ask what support is available.",
+      },
+      {
+        q: "Can I bring a friend or partner?",
+        a: "Usually yes, but consider whether you should. Many people find that attending with someone they know changes the experience — you default to familiar dynamics instead of being fully present. Some retreats offer shared rooms for couples or friends. Others intentionally separate people who arrive together. If you are nervous about going alone, bringing someone can help, but know that the deepest work often happens when you do not have a social safety net. Check individual retreat policies on our listings.",
       },
     ],
   },
