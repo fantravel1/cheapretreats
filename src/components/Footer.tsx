@@ -28,15 +28,20 @@ const footerSections = [
   {
     title: "Discover",
     links: [
-      { href: "/community-run", label: "Community-Run Retreats" },
+      { href: "/retreats", label: "All Retreats" },
+      { href: "/types", label: "Browse by Type" },
+      { href: "/locations", label: "Locations" },
+      { href: "/community-run", label: "Community-Run" },
       { href: "/verified", label: "Verified Safe & Real" },
-      { href: "/first-time", label: "First-Time Guide" },
       { href: "/reviews", label: "Honest Reviews" },
     ],
   },
   {
-    title: "About",
+    title: "Guides & Info",
     links: [
+      { href: "/start-here", label: "Start Here" },
+      { href: "/first-time", label: "First-Time Guide" },
+      { href: "/guides", label: "All Guides" },
       { href: "/manifesto", label: "Our Manifesto" },
       { href: "/about", label: "About Us" },
       { href: "/faq", label: "FAQ" },
