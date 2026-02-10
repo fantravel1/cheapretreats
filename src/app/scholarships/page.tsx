@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { retreats } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Retreat Scholarships — Free & Funded Healing Opportunities",
@@ -126,8 +127,10 @@ export default function ScholarshipsPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-rose-50/40 to-warm-50 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-rose-50/40 to-warm-50 py-20 md:py-32">
+        <img src={heroImages.scholarships} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-rose-50/90 via-rose-50/75 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
             Healing is not just for<br className="hidden sm:block" /> people with money.
           </h1>

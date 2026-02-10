@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { guideImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Monastery Retreat Etiquette — A Gentle Guide",
@@ -193,15 +194,17 @@ export default function MonasteryEtiquettePage() {
       </div>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-warm-100/40 to-warm-50 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-warm-100 text-warm-700 rounded-full text-sm font-medium mb-8">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <img src={guideImages["monastery-etiquette"]} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-900/80 via-warm-800/60 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
             Etiquette Guide
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-6 leading-[1.1]">
             Monastery Retreat<br className="hidden sm:block" /> Etiquette
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-warm-100 leading-relaxed max-w-xl mx-auto">
             A gentle, practical guide to being a respectful guest in someone
             else&rsquo;s sacred space. You do not need to be religious. You just
             need to be considerate.

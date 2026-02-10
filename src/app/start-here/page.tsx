@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Start Here — Find Your Affordable Healing Retreat",
@@ -134,8 +135,10 @@ export default function StartHerePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <img src={heroImages.startHere} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-50/95 via-warm-50/80 to-warm-50/60" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
             Start here.
           </h1>

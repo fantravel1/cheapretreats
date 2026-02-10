@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Our Manifesto — Healing, Not Hustle",
@@ -12,18 +13,20 @@ export default function ManifestoPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-sage-100/50 to-warm-50 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-sage-100/70 text-sage-700 rounded-full text-sm font-medium mb-8">
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <img src={heroImages.manifesto} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/90 via-sage-900/70 to-sage-800/60" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-sage-200 rounded-full text-sm font-medium mb-8 border border-white/20">
             The Healing, Not Hustle Manifesto
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-6 leading-[1.1]">
             You deserve rest
-            <span className="block text-sage-500 mt-2 italic font-normal text-[0.85em]">
+            <span className="block text-sage-200 mt-2 italic font-normal text-[0.85em]">
               even if you&rsquo;re broke.
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-sage-200 leading-relaxed max-w-xl mx-auto">
             This is not a marketing pitch. This is a belief system.
           </p>
         </div>

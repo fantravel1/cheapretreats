@@ -7,6 +7,7 @@ import {
   getRetreatSlug,
 } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { typeImages, heroImages } from "@/lib/images";
 
 /* -------------------------------------------------------------------------- */
 /*  Static params                                                              */
@@ -393,24 +394,26 @@ export default async function TypePage(props: {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 text-sage-700 rounded-full text-sm font-medium mb-8 border border-white/40">
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <img src={typeImages[slug] || heroImages.retreatsIndex} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/85 via-sage-800/65 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-8 border border-white/20 backdrop-blur-sm">
             Browse by Type
           </div>
           <div className="text-4xl mb-4" role="img" aria-hidden="true">
             {type.icon}
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-4 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-4 leading-[1.1]">
             {type.name}
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-sage-100 leading-relaxed max-w-xl mx-auto">
             {type.description}
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-500">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-200">
             <span className="flex items-center gap-1.5">
               <svg
-                className="w-4 h-4 text-sage-400"
+                className="w-4 h-4 text-sage-300"
                 viewBox="0 0 16 16"
                 fill="currentColor"
               >
@@ -424,7 +427,7 @@ export default async function TypePage(props: {
             </span>
             <span className="flex items-center gap-1.5">
               <svg
-                className="w-4 h-4 text-sage-400"
+                className="w-4 h-4 text-sage-300"
                 viewBox="0 0 16 16"
                 fill="currentColor"
               >
@@ -434,7 +437,7 @@ export default async function TypePage(props: {
             </span>
             <span className="flex items-center gap-1.5">
               <svg
-                className="w-4 h-4 text-sage-400"
+                className="w-4 h-4 text-sage-300"
                 viewBox="0 0 16 16"
                 fill="currentColor"
               >

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { retreatTypes, getRetreatsByTypeSlug } from "@/lib/retreats-data";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Browse Retreats by Type — 20 Categories of Affordable Healing",
@@ -88,13 +89,15 @@ export default function TypesIndexPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-warm-100/50 to-sage-50/30 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <img src={heroImages.retreatsIndex} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-900/80 via-warm-800/60 to-sage-50/90" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-6 leading-[1.1]">
             Find your kind
             <br className="hidden sm:block" /> of retreat
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-warm-100 leading-relaxed max-w-xl mx-auto">
             Twenty categories of healing, each one different. Meditation,
             silence, grief, farm work, walking, sound, rest. Not every retreat
             works for every person. Start with what resonates.

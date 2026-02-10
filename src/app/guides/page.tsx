@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Retreat Guides — Honest Advice for Real People",
@@ -107,12 +108,14 @@ export default function GuidesIndexPage() {
       </div>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-warm-100/40 to-warm-50 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <img src={heroImages.startHere} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-900/80 via-warm-800/60 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-6 leading-[1.1]">
             Retreat Guides
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-warm-100 leading-relaxed max-w-xl mx-auto">
             Honest, practical advice from people who have been there. No
             affiliate links. No sponsored content. Just what we wish someone had
             told us before our first retreat.

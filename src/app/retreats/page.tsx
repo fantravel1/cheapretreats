@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { retreats, getRetreatSlug, retreatTypes } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "All Verified Retreats — Browse 65+ Affordable Healing Retreats",
@@ -56,25 +57,27 @@ export default function RetreatsIndexPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-sage-100/70 text-sage-700 rounded-full text-sm font-medium mb-8">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <img src={heroImages.retreatsIndex} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/80 via-sage-800/60 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
             {sorted.length} verified retreats
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-4 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-4 leading-[1.1]">
             All Retreats
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-sage-100 leading-relaxed max-w-xl mx-auto">
             Every verified, affordable healing retreat in our directory.
             Sorted by price, with transparent costs including meals and accommodation.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-500">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-200">
             <span>{freeCount} free / work exchange</span>
-            <span className="w-1 h-1 rounded-full bg-sage-300" />
+            <span className="w-1 h-1 rounded-full bg-sage-300/60" />
             <span>{under500} under $500</span>
-            <span className="w-1 h-1 rounded-full bg-sage-300" />
+            <span className="w-1 h-1 rounded-full bg-sage-300/60" />
             <span>{under750} $500&ndash;$749</span>
-            <span className="w-1 h-1 rounded-full bg-sage-300" />
+            <span className="w-1 h-1 rounded-full bg-sage-300/60" />
             <span>{under1000} $750&ndash;$1,000</span>
           </div>
         </div>

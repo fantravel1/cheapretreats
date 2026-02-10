@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "The $1,000 Reset — Best Affordable Retreats to Reset Your Nervous System",
@@ -284,8 +285,9 @@ export default function The1000ResetPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-sage-800 via-sage-900 to-sage-900 text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+      <section className="relative text-white py-20 md:py-32 overflow-hidden">
+        <img src={heroImages.the1000Reset} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/95 via-sage-900/80 to-sage-900/70" />
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-8 text-sage-200">
             Signature Guide

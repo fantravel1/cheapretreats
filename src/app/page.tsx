@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages, sectionImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "CheapRetreats — Affordable Healing Retreats for Real People",
@@ -294,30 +295,30 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-sage-100/40 via-warm-50 to-warm-50" />
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a5640' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
+        <img src={heroImages.homepage} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/90 via-sage-900/70 to-sage-900/50" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-32 lg:pt-32 lg:pb-40">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-sage-100/70 text-sage-700 rounded-full text-sm font-medium mb-8 border border-sage-200/60">
-              <span className="w-2 h-2 rounded-full bg-sage-500 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-sage-200 rounded-full text-sm font-medium mb-8 border border-white/20">
+              <span className="w-2 h-2 rounded-full bg-sage-300 animate-pulse" />
               500+ verified retreats from $0 to $1,000
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-sage-900 mb-6 leading-[1.1] tracking-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-[1.1] tracking-tight">
               You deserve rest
-              <span className="block text-sage-500 mt-2 italic font-normal text-[0.85em]">
+              <span className="block text-sage-200 mt-2 italic font-normal text-[0.85em]">
                 even if you&rsquo;re broke.
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-sage-600 max-w-2xl mx-auto mb-4 leading-relaxed">
+            <p className="text-lg md:text-xl text-sage-200 max-w-2xl mx-auto mb-4 leading-relaxed">
               Healing should not be a luxury good. We find affordable, honest,
               verified retreats — organized by what you actually need, not what
               sounds marketable.
             </p>
 
-            <p className="text-base text-sage-500 max-w-xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base text-sage-300 max-w-xl mx-auto mb-10 leading-relaxed">
               Monastery stays. Silent guesthouses. Farm residencies. Walking pilgrimages.
               The kind of rest that works — without the $5,000 price tag or the
               mandatory gratitude journal.
@@ -335,7 +336,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/the-1000-reset"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-sage-700 font-medium rounded-full hover:bg-sage-50 transition-colors border border-sage-200 text-base"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-medium rounded-full hover:bg-white/20 transition-colors border border-white/20 text-base"
               >
                 The $1,000 Reset
               </Link>
@@ -343,7 +344,7 @@ export default function HomePage() {
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-16 md:mt-20 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-sage-500">
+          <div className="mt-16 md:mt-20 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-sage-300">
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-sage-400" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.5 5 5.5.8-4 3.9.9 5.3L8 12.4 3.1 15l.9-5.3-4-3.9L5.5 5z" /></svg>
               Verified Safe & Real
@@ -964,8 +965,10 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-sage-50 to-warm-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <img src={sectionImages.cta} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-50/95 via-warm-50/90 to-warm-50/95" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-5xl font-semibold text-sage-900 mb-6 leading-tight">
               Healing should not be <br className="hidden sm:block" />a luxury good.

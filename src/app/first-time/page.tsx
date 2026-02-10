@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "First-Time Retreat Guide — What to Expect, What to Bring, How to Prepare",
@@ -216,8 +217,10 @@ const redFlags = [
 export default function FirstTimePage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-sky-100/40 to-warm-50 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-sky-100/40 to-warm-50 py-20 md:py-32">
+        <img src={heroImages.firstTime} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-50/90 via-sky-50/75 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-sky-100/70 text-sky-700 rounded-full text-sm font-medium mb-8">
             For first-timers
           </div>

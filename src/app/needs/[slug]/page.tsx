@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { needsData, getAllNeedSlugs } from "@/lib/needs-data";
+import { needImages } from "@/lib/images";
 
 export function generateStaticParams() {
   return getAllNeedSlugs().map((slug) => ({ slug }));
@@ -37,8 +38,10 @@ export default function NeedPage({ params }: { params: { slug: string } }) {
   return (
     <>
       {/* Hero */}
-      <section className={`relative bg-gradient-to-b ${need.gradient} py-20 md:py-32`}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className={`relative overflow-hidden bg-gradient-to-b ${need.gradient} py-20 md:py-32`}>
+        <img src={needImages[params.slug] || needImages.burnout} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/70 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 text-sage-700 rounded-full text-sm font-medium mb-8 border border-white/40">
             Browse by Need
           </div>

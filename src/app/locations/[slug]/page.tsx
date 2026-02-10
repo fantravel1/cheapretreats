@@ -9,6 +9,7 @@ import {
   getCountryName,
 } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { locationImages } from "@/lib/images";
 
 export function generateStaticParams() {
   return locationData.map((l) => ({ slug: slugify(l.name) }));
@@ -78,16 +79,13 @@ export default async function LocationPage(props: {
     <>
       {/* Hero */}
       <section
-        className={`relative overflow-hidden bg-gradient-to-b ${gradient} py-20 md:py-32`}
+        className="relative overflow-hidden py-20 md:py-32"
       >
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute top-16 left-[15%] w-48 h-48 bg-sage-200/15 rounded-full blur-3xl" />
-          <div className="absolute top-24 right-[20%] w-40 h-40 bg-sky-200/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-12 left-[40%] w-56 h-56 bg-warm-200/10 rounded-full blur-3xl" />
-        </div>
+        <img src={locationImages[location.code] || locationImages.Global} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/80 via-sage-800/60 to-warm-50" />
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 text-sage-700 rounded-full text-sm font-medium mb-6 border border-white/40">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6 border border-white/20 backdrop-blur-sm">
             <svg
               className="w-3.5 h-3.5"
               viewBox="0 0 14 14"
@@ -97,17 +95,17 @@ export default async function LocationPage(props: {
             </svg>
             {location.region}
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-4 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-4 leading-[1.1]">
             Healing retreats in<br className="hidden sm:block" />{" "}
             {location.name}
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-sage-100 leading-relaxed max-w-xl mx-auto mb-8">
             {location.description}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-500">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-sage-200">
             <span className="flex items-center gap-1.5">
               <svg
-                className="w-4 h-4 text-sage-400"
+                className="w-4 h-4 text-sage-300"
                 viewBox="0 0 16 16"
                 fill="currentColor"
               >
@@ -122,7 +120,7 @@ export default async function LocationPage(props: {
             {hasFreeRetreats && (
               <span className="flex items-center gap-1.5">
                 <svg
-                  className="w-4 h-4 text-sage-400"
+                  className="w-4 h-4 text-sage-300"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >
@@ -134,7 +132,7 @@ export default async function LocationPage(props: {
             {minPrice > 0 && (
               <span className="flex items-center gap-1.5">
                 <svg
-                  className="w-4 h-4 text-sage-400"
+                  className="w-4 h-4 text-sage-300"
                   viewBox="0 0 16 16"
                   fill="currentColor"
                 >

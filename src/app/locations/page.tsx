@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { locationData, retreats, slugify } from "@/lib/retreats-data";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Retreat Locations Worldwide — Find Healing Retreats by Country",
@@ -54,29 +55,21 @@ export default function LocationsIndexPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sage-100/60 via-sky-50/30 to-warm-50 py-20 md:py-32">
-        {/* Decorative world map feel with CSS gradients */}
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute top-12 left-[10%] w-40 h-40 bg-sage-200/20 rounded-full blur-3xl" />
-          <div className="absolute top-20 right-[15%] w-56 h-56 bg-sky-200/15 rounded-full blur-3xl" />
-          <div className="absolute bottom-16 left-[30%] w-48 h-48 bg-warm-200/15 rounded-full blur-3xl" />
-          <div className="absolute top-32 left-[50%] w-32 h-32 bg-rose-200/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-[25%] w-36 h-36 bg-clay-200/10 rounded-full blur-3xl" />
-          <div className="absolute top-8 left-[40%] w-24 h-24 bg-sage-300/10 rounded-full blur-2xl" />
-          <div className="absolute bottom-8 left-[60%] w-28 h-28 bg-sky-300/10 rounded-full blur-2xl" />
-        </div>
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <img src={heroImages.retreatsIndex} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/80 via-sage-800/60 to-warm-50" />
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 text-sage-700 rounded-full text-sm font-medium mb-8 border border-white/40">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-8 border border-white/20 backdrop-blur-sm">
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
               <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 1.5a6.5 6.5 0 110 13 6.5 6.5 0 010-13zM7.25 3v5.25H11a.75.75 0 010 1.5H6.5V3a.75.75 0 011.5 0z" />
             </svg>
             {totalLocations} countries, {totalRetreats} retreats
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-white mb-6 leading-[1.1]">
             Healing retreats,<br className="hidden sm:block" /> wherever you are
           </h1>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-sage-100 leading-relaxed max-w-xl mx-auto">
             Affordable, verified retreats across six continents. Find a place
             that feels right &mdash; close to home or far from everything.
           </p>

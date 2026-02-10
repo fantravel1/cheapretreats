@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { needsData } from "@/lib/needs-data";
+import { heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Browse Retreats by Need — What Do You Need Right Now?",
@@ -14,8 +15,10 @@ export default function NeedsIndexPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-sage-100/40 to-warm-50 py-20 md:py-32">
+        <img src={heroImages.needs} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-50/90 via-sage-50/75 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-sage-900 mb-6 leading-[1.1]">
             What do you need<br className="hidden sm:block" /> right now?
           </h1>

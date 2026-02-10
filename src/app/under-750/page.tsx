@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { retreats } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { priceImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Retreats Under $750 — Multi-Night Healing Stays",
@@ -53,8 +54,10 @@ export default function Under750Page() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-warm-100/50 to-warm-50 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-warm-100/50 to-warm-50 py-16 md:py-24">
+        <img src={priceImages.under750} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-50/90 via-warm-50/75 to-warm-50" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-warm-100 text-warm-700 rounded-full text-sm font-medium mb-8">
             {filtered.length}+ verified retreats
           </div>

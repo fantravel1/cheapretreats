@@ -11,6 +11,7 @@ import {
   retreatTypes,
 } from "@/lib/retreats-data";
 import { RetreatCard } from "@/components/RetreatCard";
+import { getRetreatImage } from "@/lib/images";
 
 export function generateStaticParams() {
   return retreats.map((r) => ({
@@ -363,11 +364,13 @@ export default async function RetreatDetailPage(props: {
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sage-100/40 to-warm-50 py-12 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden py-12 md:py-20">
+        <img src={getRetreatImage(retreat.name, retreat.type, retreat.location)} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover h-64 md:h-80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-900/85 via-sage-900/70 to-warm-50" />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 mb-6">
             {retreat.verified && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-sage-100 text-sage-700 text-xs font-medium rounded-full">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/20 text-white text-xs font-medium rounded-full backdrop-blur-sm">
                 <svg className="w-3.5 h-3.5" viewBox="0 0 12 12" fill="currentColor">
                   <path fillRule="evenodd" d="M6 0.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM8.7 4.8a.5.5 0 00-.7-.6L5.5 6.6 4 5.2a.5.5 0 00-.7.6l2 2a.5.5 0 00.7 0l3-2.7-.3-.3z" />
                 </svg>
@@ -375,42 +378,42 @@ export default async function RetreatDetailPage(props: {
               </span>
             )}
             {retreatType && (
-              <span className="inline-flex items-center px-3 py-1.5 bg-sky-100 text-sky-700 text-xs font-medium rounded-full">
+              <span className="inline-flex items-center px-3 py-1.5 bg-white/20 text-white text-xs font-medium rounded-full backdrop-blur-sm">
                 {retreatType.name}
               </span>
             )}
           </div>
 
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-sage-900 mb-4 leading-[1.1]">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 leading-[1.1]">
             {retreat.name}
           </h1>
 
-          <p className="text-lg md:text-xl text-sage-600 mb-6">
+          <p className="text-lg md:text-xl text-sage-200 mb-6">
             {retreat.location}, {country}
           </p>
 
           <div className="flex flex-wrap items-end gap-6 mb-8">
             <div>
-              <div className="font-display text-4xl md:text-5xl font-semibold text-sage-800">
+              <div className="font-display text-4xl md:text-5xl font-semibold text-white">
                 {retreat.priceDisplay}
               </div>
-              <div className="text-sm text-sage-500 mt-1">
+              <div className="text-sm text-sage-200 mt-1">
                 {retreat.nightsDisplay} &middot; {perNight}
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
               {retreat.workExchange && (
-                <span className="px-3 py-1.5 bg-sky-100 text-sky-700 text-xs font-medium rounded-full">
+                <span className="px-3 py-1.5 bg-sky-400/20 text-sky-100 text-xs font-medium rounded-full backdrop-blur-sm">
                   Work Exchange
                 </span>
               )}
               {retreat.slidingScale && (
-                <span className="px-3 py-1.5 bg-sage-100 text-sage-700 text-xs font-medium rounded-full">
+                <span className="px-3 py-1.5 bg-sage-400/20 text-sage-100 text-xs font-medium rounded-full backdrop-blur-sm">
                   Sliding Scale
                 </span>
               )}
               {retreat.scholarship && (
-                <span className="px-3 py-1.5 bg-rose-50 text-rose-700 text-xs font-medium rounded-full">
+                <span className="px-3 py-1.5 bg-rose-400/20 text-rose-100 text-xs font-medium rounded-full backdrop-blur-sm">
                   Scholarships
                 </span>
               )}
@@ -418,7 +421,7 @@ export default async function RetreatDetailPage(props: {
           </div>
 
           {retreat.description && (
-            <p className="text-sage-600 leading-relaxed max-w-2xl">
+            <p className="text-sage-100 leading-relaxed max-w-2xl">
               {retreat.description}
             </p>
           )}
