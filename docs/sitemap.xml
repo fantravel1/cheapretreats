@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://cheapretreats.com</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cheapretreats.com/start-here</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cheapretreats.com/manifesto</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/the-1000-reset</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cheapretreats.com/retreats</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Browse by Need -->
+  <url><loc>https://cheapretreats.com/needs</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cheapretreats.com/needs/burnout</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/grief</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/depression</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/trauma-sensitive</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/quiet</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/loneliness</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/caregivers</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/needs/stop</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- By Budget -->
+  <url><loc>https://cheapretreats.com/under-500</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/under-750</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/under-1000</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Community & Discovery -->
+  <url><loc>https://cheapretreats.com/community-run</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/work-exchange</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/scholarships</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/verified</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/first-time</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/reviews</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/faq</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/about</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cheapretreats.com/legal</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Browse by Type -->
+  <url><loc>https://cheapretreats.com/types</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/types/work-exchange</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/meditation</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/silent-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/monastery</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/rest-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/grief-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/nature-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/community-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/trauma-sensitive</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/caregiver-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/creative-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/spiritual-community</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/digital-detox</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/farm-stay</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/somatic</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/walking-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/sound-healing</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/hot-springs</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/wellness</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/types/learning-retreat</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Locations -->
+  <url><loc>https://cheapretreats.com/locations</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/locations/united-states</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/canada</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/united-kingdom</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/france</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/portugal</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/spain</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/italy</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/ireland</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/sweden</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/iceland</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/mexico</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/costa-rica</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/peru</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/indonesia</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/nepal</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/locations/south-africa</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Guides -->
+  <url><loc>https://cheapretreats.com/guides</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cheapretreats.com/guides/what-to-pack</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/how-to-choose</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/sliding-scale-explained</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/meditation-for-beginners</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/monastery-etiquette</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/retreats-for-introverts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/retreats-vs-vacations</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/post-retreat-integration</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/retreats-for-couples</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cheapretreats.com/guides/digital-detox-tips</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Individual Retreats -->
+  <url><loc>https://cheapretreats.com/retreats/esalen-work-scholar-program</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/wwoof-farm-stays</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/insight-meditation-society</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/birchwood-work-exchange</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/taiz-community</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/volunteer-nepal-meditation-center</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/karme-choling-volunteer-program</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/abbey-of-gethsemani</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/desert-house-of-prayer</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/buddhist-retreat-centre</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/dhamma-suttama</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-nothing-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/tassajara-zen-mountain-center</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/noble-silence-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/omega-rest-renewal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/gaia-house</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/still-here-grief-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/caregiver-respite-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/samish-island-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/pendle-hill-quaker-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/rest-restore-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/belonging-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/simple-stop</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/holy-cross-monastery</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/gentle-days-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-quiet-farm</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/casa-de-quietud</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/cabin-quiet</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/grief-gratitude-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/rainy-lake-writers-cabin</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/mountain-silence-retreat-center</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/parallel-presence</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-brave-space</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/manresa-jesuit-retreat-house</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-soft-landing</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/wild-grief-weekend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/trauma-sensitive-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-pause-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/cortijo-romero</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/sound-healing-sanctuary</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/digital-detox-cabin-stay</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/mountain-stillness</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/rebuilding-after-loss</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/walking-through-loss</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/mama-needs-a-break</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-table-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/neurodivergent-rest-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/spirit-rock-meditation-center</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/winter-light-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/bipoc-healing-circle-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/plum-village-practice-center</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/embodied-safety</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/caregiver-breathe-again</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/queer-rest-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/sea-silence</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/slow-living-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/kripalu-center-for-yoga</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/findhorn-foundation-experience-week</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/deep-forest-immersion</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/the-long-exhale</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/veterans-healing-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/hollyhock-lifelong-learning</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/sacred-valley-rest</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/healing-waters-retreat</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cheapretreats.com/retreats/zen-mountain-monastery</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>
